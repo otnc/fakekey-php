@@ -12,18 +12,14 @@
 
 ## 使い方
 
-| コマンド         | 内容                                                          |
-| ---------------- | ------------------------------------------------------------- |
-| `npm run dev`    | PHP のビルトインサーバーで起動します (http://localhost:8000)  |
-| `npm run format` | Prettier でコードを整形します (先に `npm install` が必要です) |
+| コマンド         | 内容                           |
+| ---------------- | ------------------------------ |
+| `npm run dev`    | PHP のビルトインサーバーで起動 |
+| `npm run format` | Prettier でコードを整形        |
 
 ## デプロイ
 
 GitHub にプッシュしたリポジトリを Vercel の [New Project](https://vercel.com/new) から読み込めば、あとはプッシュするたびに自動でデプロイされます。手元から直接デプロイしたいときは `npx vercel` を使ってください。
-
-設定は `vercel.json` に書いてあり、`api/*.php` を vercel-php で動かして、`/` へのアクセスを `/api/index.php` に流しています。vercel-php は Node.js 22.x で動くので、`package.json` の `engines` で Node.js のバージョンを指定しています。
-
-Vercel の Hobby プラン (無料) は非商用利用に限られます。
 
 ## ライセンス
 
