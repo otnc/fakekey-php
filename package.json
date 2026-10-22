@@ -1,0 +1,17 @@
+{
+  "name": "fakekey",
+  "version": "1.0.0",
+  "description": "Shows a realistic-looking fake RSA private key on every request",
+  "private": true,
+  "scripts": {
+    "dev": "php -S localhost:8000 api/index.php",
+    "format": "prettier --write ."
+  },
+  "engines": {
+    "node": "22.x"
+  },
+  "devDependencies": {
+    "@prettier/plugin-php": "^0.26.0",
+    "prettier": "^3.9.10"
+  }
+}
